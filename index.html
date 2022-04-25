@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>TestTask</title>
+</head>
+<body>
+<div class="search">
+    <label>Search Post</label>
+    <input type="text" id="input" placeholder="Write something here"/>
+</div>
+
+<div class="formContainer">
+    <button id="addButton" class="button">Add Post</button>
+    <div class="addForm">
+        <form role="form" autocomplete="off" id="createPost">
+            <div>
+                <label>Title</label>
+                <input type="text" name="title" placeholder="Write Post Title"/>
+            </div>
+            <div>
+                <label>Post text</label>
+                <textarea name="body" placeholder="Write Post Text"></textarea>
+            </div>
+            <div class="formButtons">
+                <button type="reset" id="cancelButton" class="button">Cancel</button>
+                <button type="submit" id="submitButton" class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<ul id="postsList"></ul>
+<ul id="pagination"></ul>
+<script src="main.js"></script>
+</body>
+</html>

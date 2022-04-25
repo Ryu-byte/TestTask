@@ -1,0 +1,125 @@
+body {
+    background-color: #FFFAFA;
+}
+.button {
+    padding: 15px;
+    margin-top: 30px;
+    background: #4169E1;
+    font-size: 30px;
+    color: white;
+    cursor:pointer;
+}
+#pagination {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+#pagination li {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+#pagination li:hover, #pagination li.active {
+    cursor: pointer;
+    color: red;
+    border: 1px solid red;
+}
+.hide {
+    display:none;
+}
+.formContainer {
+    height: 150px;
+    margin: 50px 15px 0 50px;
+}
+#createPost {
+    margin: auto;
+    font-size: 20px;
+    background: lightgray;
+    border: 1px solid lightgray;
+    padding: 30px;
+    border-radius: 10px;
+}
+#createPost label {
+    display: flex;
+}
+#createPost div:first-child {
+    margin-bottom: 50px;
+}
+#createPost input, textarea {
+    border: none;
+    font-size: 25px;
+    width: 100%;
+}
+.formButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#cancelButton {
+    background: #4169E1;
+    font-size: 15px;
+}
+#submitButton {
+    background: #4169E1;
+    font-size: 15px;
+}
+.addForm {
+    position: relative;
+    z-index: 5;
+    display: none;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+.addForm.open {
+    display: flex;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.search {
+    margin: 50px 15px 0 50px;
+}
+.search label {
+    font-size: 30px;
+    margin-right: 15px;
+}
+.search input {
+    font-size: 25px;
+    border: 1px solid lightgray;
+}
+#addButton {
+    background: #4169E1;
+    font-size: 30px;
+}
+.post_title {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.post_body {
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-style: italic;
+}
+.post {
+    z-index: 1;
+    position: relative;
+    margin-top: 50px;
+}
+#deleteButton {
+    border: 0;
+    background-color: #FFFAFA;
+    position: absolute;
+    top: -18px;
+    right: 50px;
+    cursor: pointer;
+}
